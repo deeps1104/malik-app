@@ -1,6 +1,7 @@
 import React from "react";
 import "./HeroSection.css";
 import fashionModelImage from "../assets/images/ModelImage.png";
+
 const HeroSection = () => {
   return (
     <div className="hero-container">

@@ -19,7 +19,7 @@ function Footer() {
               <h2 className="subscription-title  mb-2 mb-md-3">
                 JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
               </h2>
-              <p className="subscription-text  mb-3 mb-md-4">
+              <p className="subscription-text mb-3 mb-md-4 text-white">
                 Type your email down below and be young wild generation
               </p>
               

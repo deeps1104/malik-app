@@ -71,7 +71,6 @@
     }
   }
   
-  /* Extra Responsiveness Fixes */
   @media (max-width: 360px) {
     .subscription-title {
       font-size: 1.1rem;
@@ -91,7 +90,6 @@
     }
   }
   
-  /* Hover and Focus States */
   .subscription-form .form-control:focus {
     box-shadow: none;
     border-color: #212529;
@@ -101,7 +99,6 @@
     background-color: #000;
   }
   
-  /* Dark Mode Support */
   @media (prefers-color-scheme: dark) {
     .subscription-container {
       background-color: #e6c430;

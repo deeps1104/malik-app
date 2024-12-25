@@ -15,9 +15,9 @@ import sherwani from "../assets/images/sherwani.png";
   return (
     <section className="shop-by-category">
       <div className="container">
-        <h2 className="mb-4">
+        <h3 className="mb-4 shop-category">
       SHOP BY CATEGORY
-        </h2>
+        </h3>
         <div className="row">
           {categories.map((category, index) => (
             <div key={index} className="col-lg-4 col-md-6 col-sm-12 mb-4">

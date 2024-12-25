@@ -6,12 +6,11 @@ import "./Navbar.css";
 const Navbar = () => {
   const navigate = useNavigate();
   const handleSignupClick = () => {
-    navigate("/signup"); // Navigate to signup page
+    navigate("/signup"); 
   };
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div className="container">
-        {/* Hamburger Menu for Mobile */}
         <button
           className="navbar-toggler"
           type="button"
@@ -24,7 +23,6 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li className="nav-item ">
@@ -33,31 +31,29 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link active" href="#">
                 New Arrivals
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link active" href="#">
                 Sale
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link active" href="#">
                 Blog
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Centered Logo */}
         <div className="navbar-logo">
           <a className="navbar-brand" href="#">
             <img src={applogo} alt="Logo" className="logo-img" />
           </a>
         </div>
 
-        {/* Search Bar */}
         <div className="search-bar mx-3">
           <input
             type="search"

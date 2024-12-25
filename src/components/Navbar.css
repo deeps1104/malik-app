@@ -1,4 +1,4 @@
-.navbar-logo {
+/* .navbar-logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -39,7 +39,6 @@
   
 
   
-  /* Responsive design */
   @media (max-width: 768px) {
     .navbar-logo {
       position: static;
@@ -60,6 +59,81 @@
   @media (min-width: 1200px) {
     .logo-img {
       width: 70px;
+    }
+  }
+   */
+
+   .navbar-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo-img {
+    max-width: 100%; 
+    height: auto;    
+    width: 60px;     
+    object-fit: contain;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #D9D9D959;
+  }
+  
+  .search-bar input {
+    background-color: #D9D9D959;
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+    flex-grow: 1;
+  }
+  
+  .search-bar button {
+    border: none;
+    background: none;
+    padding: 0 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-logo {
+      position: static;
+      transform: none;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .logo-img {
+      width: 50px; 
+    }
+  
+    .search-bar {
+      width: 100%; 
+    }
+  
+    .search-bar input {
+      width: auto;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .logo-img {
+      width: 70px; 
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .logo-img {
+      width: 90px; 
     }
   }
   

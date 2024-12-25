@@ -33,7 +33,7 @@ const NewArrivals = () => {
           <p className="text-white text-center">
             passages of Lorem Ipsum available, but the majority
           </p>
-          <h2 className="mb-4">NEW ARRIVALS</h2>
+          <h2 className="mb-1">NEW ARRIVALS</h2>
         </div>
         <div className="row g-4">
           {arrivals.map((product, index) => (

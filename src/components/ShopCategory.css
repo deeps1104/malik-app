@@ -4,12 +4,15 @@
   background-color: #f9f9f9;
 }
 
-.shop-by-category h2 {
+.shop-by-category {
   font-size: 2rem;
   font-weight: bold;
 }
 
+.shop-category{
+  font-weight: bold;
 
+}
 
 /* Card styling */
 .card {
