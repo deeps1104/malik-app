@@ -1,0 +1,109 @@
+.subscription-container {
+    background-color: #f4d03f;
+    min-height: 300px;
+  }
+  
+  .subscription-title {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #FFF;
+  }
+  
+  .subscription-text {
+    font-size: 0.875rem;
+    opacity: 0.9;
+    letter-spacing:1px;
+
+  }
+  
+  .subscription-form .input-group {
+    max-width: 450px;
+    margin: 0 auto;
+    padding-top:40px;
+  }
+  
+  .subscription-form .form-control {
+    height: 44px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding-left: 1rem;
+  }
+  
+  .subscription-form .btn {
+    border-radius: 0 5px 5px 0;
+    height: 44px;
+    min-width: 80px;
+  }
+  
+  @media (min-width: 576px) {
+    .subscription-title {
+      font-size: 1.5rem;
+    }
+    
+    .subscription-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .subscription-title {
+      font-size: 1.75rem;
+    }
+    
+    .subscription-form .form-control,
+    .subscription-form .btn {
+      height: 48px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .subscription-title {
+      font-size: 2rem;
+    }
+    
+    .subscription-content {
+      padding: 3rem 0;
+    }
+    
+    .subscription-form .form-control,
+    .subscription-form .btn {
+      height: 52px;
+    }
+  }
+  
+  /* Extra Responsiveness Fixes */
+  @media (max-width: 360px) {
+    .subscription-title {
+      font-size: 1.1rem;
+    }
+    
+    .subscription-text {
+      font-size: 0.8rem;
+    }
+    
+    .subscription-form .form-control {
+      font-size: 0.875rem;
+    }
+    
+    .subscription-form .btn {
+      font-size: 0.875rem;
+      min-width: 70px;
+    }
+  }
+  
+  /* Hover and Focus States */
+  .subscription-form .form-control:focus {
+    box-shadow: none;
+    border-color: #212529;
+  }
+  
+  .subscription-form .btn-dark:hover {
+    background-color: #000;
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .subscription-container {
+      background-color: #e6c430;
+    }
+  }

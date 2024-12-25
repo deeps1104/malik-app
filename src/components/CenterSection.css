@@ -1,0 +1,146 @@
+
+
+
+.formal-wear-container {
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Text Content Styles */
+.content-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+
+
+
+.description-text {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Button Styles */
+.learn-more-btn {
+  background-color: #ff6b00;
+  color: #000;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: block; 
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #e65c00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles */
+.image-section {
+  padding: 1rem;
+}
+
+.formal-wear-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.formal-wear-image:hover {
+  transform: scale(1.02);
+}
+
+/* Large Screens (lg) */
+@media screen and (min-width: 992px) {
+  .formal-wear-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .content-section,
+  .image-section {
+    flex: 1;
+  }
+  .description-text {
+    font-size: 14px;
+  }
+}
+
+/* Medium Screens (md) */
+@media screen and (max-width: 991px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .content-section {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .image-section {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .description-text {
+    font-size: 14px;
+  }
+}
+
+/* Small Screens (sm) */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .description-text {
+    font-size: 12px;
+  }
+  
+  .content-section {
+    padding: 1rem;
+  }
+}
+
+/* Extra Small Screens (xs) */
+@media screen and (max-width: 576px) {
+  
+  
+  .learn-more-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .description-text {
+    font-size: 10px;
+  }
+  .formal-wear-container {
+    padding: 1rem;
+  }
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-section, .image-section {
+  animation: fadeIn 0.8s ease-out;
+}
