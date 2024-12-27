@@ -8,7 +8,7 @@ const SaleSection = () => {
             <div className="col-md-6">
               <div className="sale-content">
                 <p className="mb-3 sale-detail-content ">BIG SALE</p>
-                <h2 className="mb-3 sale-detail-content ">Raise your Style Fashion With
+                <h2 className="mb-3 sale-detail-contents">Raise your Style Fashion With
 
                 Upto 50% Off On Our Blazer, Indowestern and Sherwani
                 </h2>

@@ -115,9 +115,9 @@
     display: flex;
   }
 
-  .navbar-search-input {
+  /* .navbar-search-input {
     width: 100px;
-  }
+  } */
 
   .navbar-logo img {
     height: 25px;
@@ -140,9 +140,9 @@
     transform: none;
   }
 
-  .navbar-search-input {
+  /* .navbar-search-input {
     width: 150px;
-  }
+  } */
 
   .navbar-logo img {
     height: 30px;

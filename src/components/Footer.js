@@ -34,7 +34,7 @@ function Footer() {
                     required
                   />
                   <button
-                    className="btn btn-dark px-3 px-md-4"
+                    className="sendbtn"
                     type="submit"
                   >
                     SEND

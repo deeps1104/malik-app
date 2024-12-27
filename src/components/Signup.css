@@ -150,7 +150,7 @@
   
     .form-container {
       margin: 0 auto;
-      width: 50%;
+      width: 75%;
       box-shadow: none;
     }
   
@@ -165,7 +165,7 @@
   
   @media (max-width: 576px) {
     .form-container {
-      padding: 15px;
+      padding: 5px;
     }
   
     .form-title {

@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react";
-import { Link, useNavigate } from "react-router-dom"; 
+import React, { useState, useRef, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import applogo from "../assets/images/applogo.png";
 import "./Navbar.css";
 
@@ -7,12 +7,18 @@ const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
   const userIconRef = useRef(null);
   const navigate = useNavigate();
+  const location = useLocation(); // Hook to track current route
 
   const toggleModal = () => setShowModal(!showModal);
 
   const handleSignupClick = () => {
-    navigate("/signup"); 
+    navigate("/signup");
   };
+
+  // Close the modal when the route changes
+  useEffect(() => {
+    setShowModal(false);
+  }, [location.pathname]);
 
   return (
     <>

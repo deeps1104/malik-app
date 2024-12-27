@@ -1,5 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
-  overflow: auto; /* Prevent horizontal scrolling */
+  overflow: hidden;
+}
+
+html {
+  overflow: overlay;
 }
