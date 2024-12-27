@@ -60,7 +60,6 @@
   transform: scale(1.02);
 }
 
-/* Large Screens (lg) */
 @media screen and (min-width: 992px) {
   .formal-wear-container {
     display: flex;
@@ -72,12 +71,9 @@
   .image-section {
     flex: 1;
   }
-  .description-text {
-    font-size: 14px;
-  }
+ 
 }
 
-/* Medium Screens (md) */
 @media screen and (max-width: 991px) {
   .section-title {
     font-size: 2rem;
@@ -93,7 +89,7 @@
     margin: 0 auto;
   }
   .description-text {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 

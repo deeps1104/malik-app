@@ -1,73 +1,219 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
 .navbar-logo {
-    position: absolute;
-    left: 45%;
-  }
-  
-  .logo-img {
-    max-width: 100%; 
-    height: auto;    
-    width: 60px;     
-    object-fit: contain;
-  }
-  
-  .search-bar {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-logo .logo-img {
+  height: 50px;
+  max-width: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input-container {
+  display: flex;
+  position: relative;
+  width: 200px;
+}
+
+.navbar-search-input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 20px 5px 10px;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  background-color: #d9d9d959;
+}
+
+.search-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-top: 4px;
+  color: #000;
+}
+
+.search-btn i {
+  font-size: 16px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.d-flex a,
+.d-flex button {
+  margin: 0 15px;
+  color: #000;
+}
+
+.d-flex a i,
+.d-flex button i {
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: #D9D9D959;
   }
-  
-  .search-bar input {
-    background-color: #D9D9D959;
-    border: none;
-    outline: none;
-    padding: 4px 8px;
-    flex-grow: 1;
+
+  .navbar-logo {
+    position: relative;
+    left: 0;
+    transform: none;
   }
-  
-  .search-bar button {
-    border: none;
-    background: none;
-    padding: 0 12px;
-    cursor: pointer;
+
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .navbar-nav.active {
     display: flex;
+  }
+
+  .navbar-search-input {
+    width: 100px;
+  }
+
+  .navbar-logo img {
+    height: 25px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: #555;
   }
-  
-  @media (max-width: 768px) {
-    .navbar-logo {
-      position: static;
-      transform: none;
-      margin: 10px 0;
-      text-align: center;
-    }
-  
-    .logo-img {
-      width: 50px; 
-    }
-  
-    .search-bar {
-      width: 100%; 
-    }
-  
-    .search-bar input {
-      width: auto;
-    }
+
+  .navbar-logo {
+    position: relative;
+    left: 0;
+    transform: none;
   }
-  
-  @media (min-width: 768px) and (max-width: 1200px) {
-    .logo-img {
-      width: 70px; 
-    }
+
+  .navbar-search-input {
+    width: 150px;
   }
-  
-  @media (min-width: 1200px) {
-    .logo-img {
-      width: 90px; 
-    }
+
+  .navbar-logo img {
+    height: 30px;
   }
-  
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-search-input {
+    width: 200px;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-logo img {
+    height: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-logo img {
+    height: 50px;
+  }
+}
+.custom-modal {
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 250px;
+}
+
+.custom-modal.show {
+  display: block;
+}

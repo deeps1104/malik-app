@@ -79,8 +79,7 @@
   transform: scale(1.05);
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .card-img-top {
     height: 250px;
   }
@@ -107,4 +106,4 @@
     font-size: 0.8rem;
     padding: 6px 10px;
   }
-}
+} */

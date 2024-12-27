@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className="hero-container">
       <div className="container-fluid">
-        <div className="row align-items-center min-vh-75">
+        <div className="row align-items-center">
           <div className="col-md-6 position-relative">
             <img
               src={fashionModelImage}
@@ -16,9 +16,9 @@ const HeroSection = () => {
             <span className="hero-star-1"></span>
             <span className="hero-star-2"></span>
           </div>
-          <div className="col-md-6 py-5 px-4">
+          <div className="col-md-6 ">
             <div className="hero-content">
-              <h3 className="hero-title mb-4">
+              <h3 className="hero-title">
                 FIND CLOTHES THAT MATCHES YOUR STYLE
               </h3>
               <p className="hero-text mb-4">

@@ -28,16 +28,16 @@ const NewArrivals = () => {
 
   return (
     <section className="new-arrivals-section">
-      <div className="container py-5">
+      <div className="container py-3">
         <div className="section-title">
-          <p className="text-white text-center">
+          <p className="text-center passage-section">
             passages of Lorem Ipsum available, but the majority
           </p>
           <h2 className="mb-1">NEW ARRIVALS</h2>
         </div>
         <div className="row g-4">
           {arrivals.map((product, index) => (
-            <div key={index} className="col-12 col-sm-6 col-lg-3">
+            <div key={index} className="col-12 col-sm-12 col-lg-3">
               <div className="product-card">
                 <div className="product-image-wrapper">
                   <img

@@ -5,7 +5,13 @@
 
 .accessory-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.accessory-card .card-img-top {
+  height: 300px;
+  width: 100%;   
+  object-position: center;
 }
 
 .accessory-image {
@@ -19,17 +25,8 @@
   margin-top: 1rem;
 }
 
-
-
-.accessory-card .card-img-top {
-  height: 300px;
-  width: 100%;   
-  object-fit: cover; 
-  object-position: center; 
-}
-
 .card-body {
-  padding: 1rem; 
+  padding: 1rem;
 }
 
 .card-title {
@@ -40,17 +37,59 @@
 }
 
 .item-name-overlay {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center;
-    color: white;
-    font-size: 1.2rem;
-    background: rgba(0, 0, 0, 0.5); 
-    padding: 5px 5px; 
-    border-radius: 0.5rem; 
-  }
-  
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 5px 5px; 
+  border-radius: 0.5rem; 
+}
 
-  
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .accessory-card {
+    width: 45%; /* Two cards per row on medium screens */
+    margin: 1rem;
+  }
+
+  .accessory-card .card-img-top {
+    height: 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  .accessory-card {
+    width: 48%; /* Two cards per row on smaller tablets */
+    margin: 1rem;
+  }
+
+  .accessory-card .card-img-top {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accessory-card {
+    width: 100%; /* One card per row on mobile screens */
+    margin: 1rem 0;
+  }
+
+  .accessory-card .card-img-top {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .accessory-card .card-img-top {
+    height: 180px; /* Further reduce image size on very small screens */
+  }
+
+  .item-name-overlay {
+    font-size: 1rem;
+    padding: 4px;
+  }
+}

@@ -43,7 +43,6 @@
   justify-content: center;
 }
 
-/* Media Query for Small Devices (Max Width: 768px) */
 @media (max-width: 768px) {
   .sale-content {
     text-align: center;
@@ -55,15 +54,40 @@
   }
 }
 
-/* Media Query for Extra Small Devices (Max Width: 576px) */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  .sale-detail-content{
+    letter-spacing: 0px;
+    font-size: 20px;
+  }
+
+
+}
+
+
+@media (max-width: 768px) {
+  .sale-content {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  
+}
+
 @media (max-width: 576px) {
   .sale-content {
     padding: 1rem;
   }
 
   .sale-image {
-    height: 200px;
     border-radius: 8px;
     margin-top: 15px;
+    width: 70%;    
+
+  }
+  .sale-detail-content{
+    letter-spacing: 0px;
+    font-size: 16px;
   }
 }

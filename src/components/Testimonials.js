@@ -37,13 +37,15 @@ const Testimonials = () => {
         <div className="testimonials-scroll">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="testimonial-card">
-              <div className="stars">✦ ♦ ✦</div>
+              {/* Left Side - Image */}
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="testimonial-image"
+              />
+              {/* Right Side - Content */}
               <div className="testimonial-content">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="testimonial-image"
-                />
+                <div className="stars">✦ ✦ ✦</div>
                 <h3>{testimonial.name}</h3>
                 <p>{testimonial.text}</p>
               </div>
